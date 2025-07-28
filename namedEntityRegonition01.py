@@ -12,5 +12,5 @@ if __name__ == "__main__":
     nltk.download('maxent_ne_chunker_tab')
     # ...existing code...
     tag_elements=nltk.pos_tag(words)
-
+    print("Drawing Named Entity Recognition Tree in a new window...")
     nltk.ne_chunk(tag_elements).draw()
